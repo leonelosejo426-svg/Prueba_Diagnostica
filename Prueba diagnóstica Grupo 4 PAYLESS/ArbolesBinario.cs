@@ -22,6 +22,9 @@ namespace Prueba_diagnóstica_Grupo_4_PAYLESS
 
         }
 
+
+
+
         private void btnEliminar_Click(object sender, EventArgs e)
         {
 

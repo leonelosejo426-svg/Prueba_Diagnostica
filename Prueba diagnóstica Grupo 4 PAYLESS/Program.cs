@@ -16,7 +16,7 @@ namespace Prueba_diagnóstica_Grupo_4_PAYLESS
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MenúPrincipal());
+            Application.Run(new ArbolesYRecorridos());
         }
     }
 }
