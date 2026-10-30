@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Colas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Colas.Designer.cs">
+      <DependentUpon>Colas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListaEnlazada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaEnlazada.Designer.cs">
+      <DependentUpon>ListaEnlazada.cs</DependentUpon>
+    </Compile>
     <Compile Include="MenúPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,6 +72,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Colas.resx">
+      <DependentUpon>Colas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaEnlazada.resx">
+      <DependentUpon>ListaEnlazada.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MenúPrincipal.resx">
       <DependentUpon>MenúPrincipal.cs</DependentUpon>
     </EmbeddedResource>
