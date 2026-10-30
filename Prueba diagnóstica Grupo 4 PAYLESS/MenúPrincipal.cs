@@ -16,5 +16,17 @@ namespace Prueba_diagnóstica_Grupo_4_PAYLESS
         {
             InitializeComponent();
         }
+
+        private void MenúPrincipal_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnPila_Click(object sender, EventArgs e)
+        {
+            Pila ventana= new Pila();
+            ventana.Show();
+            this.Hide();
+        }
     }
 }
