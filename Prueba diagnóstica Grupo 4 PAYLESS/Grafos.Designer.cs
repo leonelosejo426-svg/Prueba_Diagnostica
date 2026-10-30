@@ -29,19 +29,19 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.btnAgregarSede = new System.Windows.Forms.Button();
+            this.btnConexionesDirecta = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.button3 = new System.Windows.Forms.Button();
+            this.txtOrigeri = new System.Windows.Forms.TextBox();
+            this.txtDestino = new System.Windows.Forms.TextBox();
+            this.txtDistancia = new System.Windows.Forms.TextBox();
+            this.btnConectar = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.button4 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.txtA = new System.Windows.Forms.TextBox();
+            this.btnRecorrerenProfundidad = new System.Windows.Forms.Button();
+            this.lblDFS = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -49,9 +49,9 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.button2);
-            this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.btnConexionesDirecta);
+            this.groupBox1.Controls.Add(this.btnAgregarSede);
+            this.groupBox1.Controls.Add(this.txtNombre);
             this.groupBox1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(13, 13);
             this.groupBox1.Name = "groupBox1";
@@ -60,38 +60,38 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Nuevo vertice";
             // 
-            // textBox1
+            // txtNombre
             // 
-            this.textBox1.Location = new System.Drawing.Point(6, 19);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(363, 35);
-            this.textBox1.TabIndex = 1;
+            this.txtNombre.Location = new System.Drawing.Point(6, 19);
+            this.txtNombre.Multiline = true;
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(363, 35);
+            this.txtNombre.TabIndex = 1;
             // 
-            // button1
+            // btnAgregarSede
             // 
-            this.button1.Location = new System.Drawing.Point(7, 75);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(109, 36);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Agregar Sede";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnAgregarSede.Location = new System.Drawing.Point(7, 75);
+            this.btnAgregarSede.Name = "btnAgregarSede";
+            this.btnAgregarSede.Size = new System.Drawing.Size(109, 36);
+            this.btnAgregarSede.TabIndex = 2;
+            this.btnAgregarSede.Text = "Agregar Sede";
+            this.btnAgregarSede.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnConexionesDirecta
             // 
-            this.button2.Location = new System.Drawing.Point(122, 75);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(151, 36);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Conexiones Directa";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnConexionesDirecta.Location = new System.Drawing.Point(122, 75);
+            this.btnConexionesDirecta.Name = "btnConexionesDirecta";
+            this.btnConexionesDirecta.Size = new System.Drawing.Size(151, 36);
+            this.btnConexionesDirecta.TabIndex = 3;
+            this.btnConexionesDirecta.Text = "Conexiones Directa";
+            this.btnConexionesDirecta.UseVisualStyleBackColor = true;
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.button3);
-            this.groupBox2.Controls.Add(this.textBox4);
-            this.groupBox2.Controls.Add(this.textBox3);
-            this.groupBox2.Controls.Add(this.textBox2);
+            this.groupBox2.Controls.Add(this.btnConectar);
+            this.groupBox2.Controls.Add(this.txtDistancia);
+            this.groupBox2.Controls.Add(this.txtDestino);
+            this.groupBox2.Controls.Add(this.txtOrigeri);
             this.groupBox2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(411, 13);
             this.groupBox2.Name = "groupBox2";
@@ -100,38 +100,38 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Nuevo Conexion";
             // 
-            // textBox2
+            // txtOrigeri
             // 
-            this.textBox2.Location = new System.Drawing.Point(6, 19);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(363, 35);
-            this.textBox2.TabIndex = 1;
+            this.txtOrigeri.Location = new System.Drawing.Point(6, 19);
+            this.txtOrigeri.Multiline = true;
+            this.txtOrigeri.Name = "txtOrigeri";
+            this.txtOrigeri.Size = new System.Drawing.Size(363, 35);
+            this.txtOrigeri.TabIndex = 1;
             // 
-            // textBox3
+            // txtDestino
             // 
-            this.textBox3.Location = new System.Drawing.Point(6, 75);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(363, 35);
-            this.textBox3.TabIndex = 2;
+            this.txtDestino.Location = new System.Drawing.Point(6, 75);
+            this.txtDestino.Multiline = true;
+            this.txtDestino.Name = "txtDestino";
+            this.txtDestino.Size = new System.Drawing.Size(363, 35);
+            this.txtDestino.TabIndex = 2;
             // 
-            // textBox4
+            // txtDistancia
             // 
-            this.textBox4.Location = new System.Drawing.Point(6, 133);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(363, 35);
-            this.textBox4.TabIndex = 2;
+            this.txtDistancia.Location = new System.Drawing.Point(6, 133);
+            this.txtDistancia.Multiline = true;
+            this.txtDistancia.Name = "txtDistancia";
+            this.txtDistancia.Size = new System.Drawing.Size(363, 35);
+            this.txtDistancia.TabIndex = 2;
             // 
-            // button3
+            // btnConectar
             // 
-            this.button3.Location = new System.Drawing.Point(6, 187);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(99, 36);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "Conectar";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnConectar.Location = new System.Drawing.Point(6, 187);
+            this.btnConectar.Name = "btnConectar";
+            this.btnConectar.Size = new System.Drawing.Size(99, 36);
+            this.btnConectar.TabIndex = 4;
+            this.btnConectar.Text = "Conectar";
+            this.btnConectar.UseVisualStyleBackColor = true;
             // 
             // panel1
             // 
@@ -142,8 +142,8 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.button4);
-            this.groupBox3.Controls.Add(this.textBox5);
+            this.groupBox3.Controls.Add(this.btnRecorrerenProfundidad);
+            this.groupBox3.Controls.Add(this.txtA);
             this.groupBox3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.Location = new System.Drawing.Point(12, 426);
             this.groupBox3.Name = "groupBox3";
@@ -152,39 +152,39 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Listade adyacencia";
             // 
-            // textBox5
+            // txtA
             // 
-            this.textBox5.Location = new System.Drawing.Point(8, 25);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(363, 35);
-            this.textBox5.TabIndex = 4;
+            this.txtA.Location = new System.Drawing.Point(8, 25);
+            this.txtA.Multiline = true;
+            this.txtA.Name = "txtA";
+            this.txtA.Size = new System.Drawing.Size(363, 35);
+            this.txtA.TabIndex = 4;
             // 
-            // button4
+            // btnRecorrerenProfundidad
             // 
-            this.button4.Location = new System.Drawing.Point(8, 71);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(231, 36);
-            this.button4.TabIndex = 5;
-            this.button4.Text = "Recorrer en Profundidad (DFS)";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnRecorrerenProfundidad.Location = new System.Drawing.Point(8, 71);
+            this.btnRecorrerenProfundidad.Name = "btnRecorrerenProfundidad";
+            this.btnRecorrerenProfundidad.Size = new System.Drawing.Size(231, 36);
+            this.btnRecorrerenProfundidad.TabIndex = 5;
+            this.btnRecorrerenProfundidad.Text = "Recorrer en Profundidad (DFS)";
+            this.btnRecorrerenProfundidad.UseVisualStyleBackColor = true;
             // 
-            // label1
+            // lblDFS
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(17, 557);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(105, 19);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "DFS desde A: ";
+            this.lblDFS.AutoSize = true;
+            this.lblDFS.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDFS.Location = new System.Drawing.Point(17, 557);
+            this.lblDFS.Name = "lblDFS";
+            this.lblDFS.Size = new System.Drawing.Size(105, 19);
+            this.lblDFS.TabIndex = 4;
+            this.lblDFS.Text = "DFS desde A: ";
             // 
             // Grafos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(914, 601);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblDFS);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox2);
@@ -205,18 +205,18 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button btnConexionesDirecta;
+        private System.Windows.Forms.Button btnAgregarSede;
+        private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Button btnConectar;
+        private System.Windows.Forms.TextBox txtDistancia;
+        private System.Windows.Forms.TextBox txtDestino;
+        private System.Windows.Forms.TextBox txtOrigeri;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnRecorrerenProfundidad;
+        private System.Windows.Forms.TextBox txtA;
+        private System.Windows.Forms.Label lblDFS;
     }
 }
