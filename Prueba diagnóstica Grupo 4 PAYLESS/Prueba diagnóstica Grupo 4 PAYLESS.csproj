@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -8,10 +8,11 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>Prueba_diagnóstica_Grupo_4_PAYLESS</RootNamespace>
     <AssemblyName>Prueba diagnóstica Grupo 4 PAYLESS</AssemblyName>
-    <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -58,6 +59,24 @@
     <Compile Include="ListaEnlazada.Designer.cs">
       <DependentUpon>ListaEnlazada.cs</DependentUpon>
     </Compile>
+    <Compile Include="Grafos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Grafos.Designer.cs">
+      <DependentUpon>Grafos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ArbolesBinario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ArbolesBinario.Designer.cs">
+      <DependentUpon>ArbolesBinario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ArbolesYRecorridos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ArbolesYRecorridos.Designer.cs">
+      <DependentUpon>ArbolesYRecorridos.cs</DependentUpon>
+    </Compile>
     <Compile Include="MenúPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,6 +88,12 @@
     </Compile>
     <Compile Include="Pila.Designer.cs">
       <DependentUpon>Pila.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Recursividad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Recursividad.Designer.cs">
+      <DependentUpon>Recursividad.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -84,6 +109,18 @@
     <EmbeddedResource Include="Pila.resx">
       <DependentUpon>Pila.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Grafos.resx">
+      <DependentUpon>Grafos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ArbolesBinario.resx">
+      <DependentUpon>ArbolesBinario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ArbolesYRecorridos.resx">
+      <DependentUpon>ArbolesYRecorridos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Recursividad.resx">
+      <DependentUpon>Recursividad.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -92,6 +129,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
